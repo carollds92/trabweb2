@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel = "stylesheet" type = "text/css" href = "stylesheets/style2.css"/>
+    <meta http-equiv = "content-type" content = "text/html;charset-utf-8"/>
+    <title> Nubank - Finalmente você no controle do seu dinheiro </title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+<body>
+  <div class="bottonclose"></div>
+  <div class="enunciado">
+    <p class="tit">Complete abaixo para pedir sua NuConta e seu cartão crédito</p>
+  </div>
+ <form action="/adduser" method="post" name="cadastro" onsubmit="return Validar();">
+   <ul>
+     {#each adduser as |erros|}     <li>{erros}</li>
+     {/each}
+   </ul>
+
+    <div class="boxlabel">
+      <p>
+        Nome Completo<br></br> <input type="text" name="username" />
+      </p>
+    </div>
+    <div class="boxlabel">
+      <p>
+        CPF<br></br><input type="text" name="cpf" />
+      </p>
+    </div>
+    <div class="boxlabel">
+      <p>
+        E-mail <br></br><input type="email" name="useremail" />
+      </p>
+    </div>
+      <!--<p>Confirmar e-mail:<input type="text" name="useremail" /></p>-->
+    <div class="botton" >
+      <p>
+        <input type="submit" value="Quero ser Nubank" />
+      </p>
+    </div>
+
+  </form>
+  
+   
+</body>
+</html>

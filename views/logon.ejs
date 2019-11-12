@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel = "stylesheet" type = "text/css" href = "../public/style2.css"/> 
+    <meta http-equiv = "content-type" content = "text/html;charset-utf-8"/>
+    <title> Nubank - Finalmente você no controle do seu dinheiro </title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	
+	<div class="bottonclose">	</div>
+	<div class="enunciado">
+		<p class="tit">Complete abaixo para pedir sua NuConta e seu cartão crédito</p>
+	</div>
+
+	<form action="/adduser" method="post">
+		<div class="boxlabel">
+			<label for="username">Nome completo</label>
+      <input type="text" id="username"></input>
+		</div>
+
+		<div class="boxlabel">
+			<label for="cpf">CPF</label>
+      <br>
+        <input type="text" id="cpf">
+        </input>
+      </br>
+		</div>
+
+		<div class="boxlabel">
+			<label for="useremail">E-mail</label>
+      <br>
+        <input type="email" id="useremail"/>
+      </br>
+		</div>
+
+		<div class="boxlabel">
+			<label for="conf">Confirmação de e-mail</label>
+      <br>
+        <input type="email" id="conf"/>
+      </br>
+		</div>
+    </form>
+	
+	<div class="boxlabel">
+    <input type="checkbox" id="politica" name="politica">
+      Li e concordo com a <a class = "politica" href="default.asp" target="_blank">política de privacidade.</a>
+    </input>
+	</div>
+
+    <div class = "botton">
+        <a class="botao" href = "userlist.ejs" target="_blank"> Quero ser Nubank</a>
+    </div>
+	
+</body>
+</html>
