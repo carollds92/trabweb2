@@ -50,4 +50,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+//configurações da porta
+
+const port = process.env.PORT || 3000; 
+app.listen (port); 
+
 module.exports = app;

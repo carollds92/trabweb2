@@ -1,4 +1,5 @@
 //este arquivo é responsável pela conexão e estrutura do  banco de dados 
+require ('dotenv').config ()
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/trabweb2');
 
